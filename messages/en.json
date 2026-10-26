@@ -1,0 +1,177 @@
+{
+  "Metadata": {
+    "title": "Brahim — Junior Full Stack Developer",
+    "description": "Brahim is a junior full stack developer and Information Systems Development student at SupNum in Mauritania. He builds thoughtful web, mobile, and backend products.",
+    "imageAlt": "Brahim — junior full stack developer based in Mauritania"
+  },
+  "Nav": {
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Switch color theme",
+    "language": "Language",
+    "primaryNav": "Primary navigation",
+    "home": "Brahim — back to top",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "externalLink": "Opens in a new tab",
+    "backToTop": "Back to top"
+  },
+  "Hero": {
+    "eyebrow": "Hello, I’m Brahim",
+    "titleLine1": "Brahim,",
+    "titleLine2": "junior full stack",
+    "titleLine3": "developer.",
+    "description": "I build thoughtful web, mobile, and backend products — with an eye for clarity, accessibility, and the details that make software feel effortless.",
+    "primaryCta": "Start a conversation",
+    "secondaryCta": "Explore my skills",
+    "portraitAlt": "Portrait of Brahim, junior full stack developer",
+    "availability": "Open to opportunities",
+    "basedIn": "Based in Mauritania",
+    "role": "Information Systems Development student",
+    "stack": "Web · Mobile · Backend",
+    "scroll": "Scroll to explore"
+  },
+  "About": {
+    "eyebrow": "01 — About",
+    "title": "A developer with a systems mindset.",
+    "lead": "I’m Brahim, a junior full stack developer based in Mauritania. I care about the whole picture: the interface people touch, the API behind it, and the data that keeps everything coherent.",
+    "body1": "I’m currently studying Information Systems Development at SupNum, where I’m building a strong foundation in software engineering, databases, and application architecture.",
+    "body2": "My interests sit at the intersection of web, mobile, and backend development. I learn best by building — from responsive interfaces with Next.js and Angular to Spring Boot services and PostgreSQL schemas.",
+    "educationLabel": "Education",
+    "educationSchool": "SupNum",
+    "educationPlace": "Mauritania",
+    "educationDegree": "Information Systems Development",
+    "educationStatus": "Currently studying",
+    "focusLabel": "Focus areas",
+    "focus": {
+      "web": "Web development",
+      "mobile": "Mobile development",
+      "backend": "Backend engineering",
+      "databases": "Databases",
+      "software": "Software engineering"
+    },
+    "approachLabel": "How I work",
+    "approach": "I like clear requirements, small iterations, and code that another person can read without a map. I ask questions early and test the details that users notice.",
+    "availability": "I’m looking for a team where I can contribute, learn quickly, and grow into a well-rounded engineer."
+  },
+  "Skills": {
+    "eyebrow": "02 — Skills",
+    "title": "Tools I work with.",
+    "intro": "A growing toolkit, organized by the parts of the stack I enjoy most. No percentages — just the technologies I use to build and ship.",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Accessible interfaces, responsive layouts, and modern component architecture."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs, server-side logic, and services built to stay maintainable."
+      },
+      "databases": {
+        "title": "Databases",
+        "description": "Relational modelling, queries, and data integrity with PostgreSQL."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform applications with a native feel, built in Flutter."
+      },
+      "tools": {
+        "title": "Tools & workflow",
+        "description": "Version control, collaboration, and containerized environments."
+      }
+    },
+    "technologies": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "angular": "Angular",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind CSS",
+      "java": "Java",
+      "springBoot": "Spring Boot",
+      "python": "Python",
+      "postgresql": "PostgreSQL",
+      "flutter": "Flutter",
+      "git": "Git",
+      "github": "GitHub",
+      "docker": "Docker"
+    }
+  },
+  "Services": {
+    "eyebrow": "03 — Services",
+    "title": "Where I can help.",
+    "intro": "From first sketch to deployed product, I focus on clear, maintainable work that solves the problem at hand.",
+    "items": {
+      "web": {
+        "title": "Full stack web development",
+        "description": "Responsive, accessible interfaces built with React, Next.js, Angular, and Tailwind CSS."
+      },
+      "mobile": {
+        "title": "Mobile app development",
+        "description": "Cross-platform Flutter applications with clean, consistent experiences."
+      },
+      "backend": {
+        "title": "Backend & API development",
+        "description": "REST APIs and server-side logic with Java, Spring Boot, and Python."
+      },
+      "database": {
+        "title": "Database design & management",
+        "description": "PostgreSQL schemas, queries, and data layers that keep applications reliable."
+      },
+      "engineering": {
+        "title": "Software engineering & maintenance",
+        "description": "Refining code, fixing issues, and adding features while keeping the foundation understandable."
+      }
+    },
+    "note": "Have something different in mind?",
+    "cta": "Tell me about it"
+  },
+  "Contact": {
+    "eyebrow": "04 — Contact",
+    "title": "Let’s build something useful.",
+    "intro": "I’m open to junior roles, internships, and collaborative projects. The quickest way to reach me is email — or say hello on any of the links below.",
+    "channels": {
+      "email": {
+        "label": "Email",
+        "description": "Best for detailed conversations."
+      },
+      "github": {
+        "label": "GitHub",
+        "description": "Code, experiments, and works in progress."
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "description": "A little more about my background."
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "Message me",
+        "description": "Quick hellos and short questions."
+      }
+    },
+    "availability": "Available for junior roles and internships",
+    "locationNote": "Based in Mauritania · Open to remote work"
+  },
+  "Footer": {
+    "tagline": "Junior full stack developer based in Mauritania, building for the web, mobile, and everything in between.",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, Tailwind CSS, and next-intl.",
+    "backToTop": "Back to top",
+    "navLabel": "Footer navigation",
+    "socialLabel": "Social links"
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "This page doesn’t exist.",
+    "description": "The link may be broken, or the page may have moved.",
+    "backHome": "Back to home",
+    "metaTitle": "Page not found — Brahim"
+  }
+}

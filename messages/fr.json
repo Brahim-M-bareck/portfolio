@@ -1,0 +1,177 @@
+{
+  "Metadata": {
+    "title": "Brahim — Développeur full stack junior",
+    "description": "Brahim est développeur full stack junior et étudiant en développement de systèmes d’information à SupNum, en Mauritanie. Il conçoit des produits web, mobiles et backend soignés.",
+    "imageAlt": "Brahim — développeur full stack junior basé en Mauritanie"
+  },
+  "Nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Common": {
+    "skipToContent": "Aller au contenu",
+    "toggleTheme": "Changer le thème",
+    "language": "Langue",
+    "primaryNav": "Navigation principale",
+    "home": "Brahim — retour en haut",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menu": "Menu",
+    "externalLink": "S’ouvre dans un nouvel onglet",
+    "backToTop": "Retour en haut"
+  },
+  "Hero": {
+    "eyebrow": "Bonjour, je suis Brahim",
+    "titleLine1": "Brahim,",
+    "titleLine2": "développeur full stack",
+    "titleLine3": "junior.",
+    "description": "Je conçois des produits web, mobiles et backend soignés — avec le souci de la clarté, de l’accessibilité et des détails qui rendent un logiciel fluide.",
+    "primaryCta": "Discutons de votre projet",
+    "secondaryCta": "Découvrir mes compétences",
+    "portraitAlt": "Portrait de Brahim, développeur full stack junior",
+    "availability": "Ouvert aux opportunités",
+    "basedIn": "Basé en Mauritanie",
+    "role": "Étudiant en développement de systèmes d’information",
+    "stack": "Web · Mobile · Backend",
+    "scroll": "Faites défiler pour explorer"
+  },
+  "About": {
+    "eyebrow": "01 — À propos",
+    "title": "Un développeur avec une vision d’ensemble.",
+    "lead": "Je suis Brahim, développeur full stack junior basé en Mauritanie. Je m’intéresse à l’ensemble : l’interface que les gens utilisent, l’API qui la soutient et les données qui donnent de la cohérence au tout.",
+    "body1": "J’étudie actuellement le développement de systèmes d’information à SupNum, où je construis des bases solides en génie logiciel, en bases de données et en architecture applicative.",
+    "body2": "Mes centres d’intérêt se situent à la rencontre du web, du mobile et du backend. J’apprends en construisant — des interfaces réactives avec Next.js et Angular aux services Spring Boot et aux schémas PostgreSQL.",
+    "educationLabel": "Formation",
+    "educationSchool": "SupNum",
+    "educationPlace": "Mauritanie",
+    "educationDegree": "Développement de systèmes d’information",
+    "educationStatus": "En cours",
+    "focusLabel": "Domaines de prédilection",
+    "focus": {
+      "web": "Développement web",
+      "mobile": "Développement mobile",
+      "backend": "Ingénierie backend",
+      "databases": "Bases de données",
+      "software": "Génie logiciel"
+    },
+    "approachLabel": "Ma façon de travailler",
+    "approach": "J’aime les besoins clairs, les petites itérations et le code qu’une autre personne peut lire sans mode d’emploi. Je pose les questions tôt et je teste les détails que les utilisateurs remarquent.",
+    "availability": "Je cherche une équipe où je peux contribuer, apprendre vite et devenir un ingénieur complet."
+  },
+  "Skills": {
+    "eyebrow": "02 — Compétences",
+    "title": "Les outils avec lesquels je travaille.",
+    "intro": "Une boîte à outils qui grandit, organisée selon les parties de la stack que j’apprécie le plus. Pas de pourcentages — uniquement les technologies que j’utilise pour construire et livrer.",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Interfaces accessibles, mises en page réactives et architecture de composants moderne."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "API, logique côté serveur et services conçus pour rester maintenables."
+      },
+      "databases": {
+        "title": "Bases de données",
+        "description": "Modélisation relationnelle, requêtes et intégrité des données avec PostgreSQL."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Applications multiplateformes à l’expérience native, développées avec Flutter."
+      },
+      "tools": {
+        "title": "Outils et méthodes",
+        "description": "Gestion de versions, collaboration et environnements conteneurisés."
+      }
+    },
+    "technologies": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "angular": "Angular",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind CSS",
+      "java": "Java",
+      "springBoot": "Spring Boot",
+      "python": "Python",
+      "postgresql": "PostgreSQL",
+      "flutter": "Flutter",
+      "git": "Git",
+      "github": "GitHub",
+      "docker": "Docker"
+    }
+  },
+  "Services": {
+    "eyebrow": "03 — Services",
+    "title": "Ce que je peux apporter.",
+    "intro": "De la première esquisse au produit déployé, je privilégie un travail clair, maintenable et adapté au problème à résoudre.",
+    "items": {
+      "web": {
+        "title": "Développement web full stack",
+        "description": "Interfaces réactives et accessibles conçues avec React, Next.js, Angular et Tailwind CSS."
+      },
+      "mobile": {
+        "title": "Développement d’applications mobiles",
+        "description": "Applications Flutter multiplateformes avec des expériences cohérentes et soignées."
+      },
+      "backend": {
+        "title": "Développement backend et API",
+        "description": "API REST et logique côté serveur avec Java, Spring Boot et Python."
+      },
+      "database": {
+        "title": "Conception et gestion de bases de données",
+        "description": "Schémas PostgreSQL, requêtes et couches de données qui rendent les applications fiables."
+      },
+      "engineering": {
+        "title": "Génie logiciel et maintenance",
+        "description": "Améliorer le code, corriger les problèmes et ajouter des fonctionnalités en gardant des bases compréhensibles."
+      }
+    },
+    "note": "Vous avez autre chose en tête ?",
+    "cta": "Parlez-m’en"
+  },
+  "Contact": {
+    "eyebrow": "04 — Contact",
+    "title": "Construisons quelque chose d’utile.",
+    "intro": "Je suis ouvert aux postes juniors, aux stages et aux projets collaboratifs. Le plus simple est de m’écrire par email — ou de dire bonjour via l’un des liens ci-dessous.",
+    "channels": {
+      "email": {
+        "label": "Email",
+        "description": "Idéal pour les échanges détaillés."
+      },
+      "github": {
+        "label": "GitHub",
+        "description": "Du code, des expérimentations et des projets en cours."
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "description": "Un peu plus sur mon parcours."
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "Écrivez-moi",
+        "description": "Pour un bonjour rapide ou une question courte."
+      }
+    },
+    "availability": "Disponible pour des postes juniors et des stages",
+    "locationNote": "Basé en Mauritanie · Ouvert au télétravail"
+  },
+  "Footer": {
+    "tagline": "Développeur full stack junior basé en Mauritanie, je construis pour le web, le mobile et tout ce qui les relie.",
+    "rights": "Tous droits réservés.",
+    "builtWith": "Conçu avec Next.js, Tailwind CSS et next-intl.",
+    "backToTop": "Retour en haut",
+    "navLabel": "Navigation du pied de page",
+    "socialLabel": "Liens sociaux"
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Cette page n’existe pas.",
+    "description": "Le lien est peut-être cassé, ou la page a été déplacée.",
+    "backHome": "Retour à l’accueil",
+    "metaTitle": "Page introuvable — Brahim"
+  }
+}

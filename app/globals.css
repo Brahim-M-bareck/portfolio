@@ -1,26 +1,186 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant rtl (&:where([dir="rtl"], [dir="rtl"] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f2f2f2;
+  --foreground: #593f39;
+  --surface: #ffffff;
+  --surface-muted: #e9e3e0;
+  --muted: #6e564f;
+  --border: #d8cfca;
+  --border-strong: #8c5f4f;
+  --primary: #3f76a6;
+  --primary-hover: #2f5a82;
+  --primary-strong: #2f5a82;
+  --primary-foreground: #ffffff;
+  --accent: #c4ddf2;
+  --accent-foreground: #593f39;
+  --secondary: #8c5f4f;
+  --secondary-foreground: #f2f2f2;
+  --panel: #593f39;
+  --panel-foreground: #f2f2f2;
+  --focus: #3f76a6;
+}
+
+.dark {
+  --background: #2a1f1c;
+  --foreground: #f2f2f2;
+  --surface: #342724;
+  --surface-muted: #3d2e2a;
+  --muted: #d9ccc7;
+  --border: #4e3c37;
+  --border-strong: #d3b5aa;
+  --primary: #c4ddf2;
+  --primary-hover: #e2eff9;
+  --primary-strong: #c4ddf2;
+  --primary-foreground: #2a1f1c;
+  --accent: #394e5c;
+  --accent-foreground: #f2f2f2;
+  --secondary: #d3b5aa;
+  --secondary-foreground: #2a1f1c;
+  --panel: #c4ddf2;
+  --panel-foreground: #2a1f1c;
+  --focus: #c4ddf2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-panel: var(--panel);
+  --color-panel-foreground: var(--panel-foreground);
+  --color-focus: var(--focus);
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html[lang="ar"] {
+  --font-manrope: var(--font-noto-arabic);
+  --font-fraunces: var(--font-amiri);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  html[lang="ar"] body {
+    font-family: var(--font-noto-arabic), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3 {
+    letter-spacing: normal;
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .page-container {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 76rem;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .page-container {
+      padding-inline: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .page-container {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .hero-wash {
+    background:
+      radial-gradient(
+        55% 60% at 85% 0%,
+        color-mix(in srgb, var(--accent) 72%, transparent) 0%,
+        transparent 70%
+      ),
+      radial-gradient(
+        38% 45% at 0% 24%,
+        color-mix(in srgb, var(--secondary) 10%, transparent) 0%,
+        transparent 72%
+      );
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .reveal-delay-2 {
+    animation-delay: 140ms;
+  }
 }
