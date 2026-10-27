@@ -24,9 +24,7 @@
   },
   "Hero": {
     "eyebrow": "Bonjour, je suis Brahim",
-    "titleLine1": "Brahim,",
-    "titleLine2": "développeur full stack",
-    "titleLine3": "junior.",
+    "title": "Brahim, <hl>développeur</hl> full stack junior.",
     "description": "Je conçois des produits web, mobiles et backend soignés — avec le souci de la clarté, de l’accessibilité et des détails qui rendent un logiciel fluide.",
     "primaryCta": "Discutons de votre projet",
     "secondaryCta": "Découvrir mes compétences",

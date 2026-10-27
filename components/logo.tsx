@@ -17,6 +17,7 @@ export function Logo({ label, className }: LogoProps) {
       </span>
       <span
         aria-hidden="true"
+        dir="ltr"
         className="hidden font-display text-xl font-semibold tracking-tight text-foreground sm:inline"
       >
         {siteConfig.name}

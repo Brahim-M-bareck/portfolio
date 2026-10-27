@@ -7,6 +7,7 @@ type SectionHeadingProps = {
   title: string;
   intro?: string;
   tone?: "default" | "inverse";
+  eyebrowTone?: "primary" | "secondary";
   className?: string;
 };
 
@@ -17,9 +18,11 @@ export function SectionHeading({
   title,
   intro,
   tone = "default",
+  eyebrowTone = "primary",
   className,
 }: SectionHeadingProps) {
   const isInverse = tone === "inverse";
+  const isSecondaryEyebrow = eyebrowTone === "secondary";
 
   return (
     <div
@@ -28,15 +31,24 @@ export function SectionHeading({
     >
       <p
         className={cn(
-          "mb-4 flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.22em] rtl:tracking-normal",
-          isInverse ? "text-panel-foreground/80" : "text-primary-strong",
+          "mb-4 flex items-center gap-3 font-semibold uppercase tracking-[0.22em] rtl:tracking-normal",
+          isSecondaryEyebrow ? "text-xs" : "text-[0.7rem]",
+          isInverse
+            ? "text-panel-foreground/80"
+            : isSecondaryEyebrow
+              ? "text-secondary"
+              : "text-primary-strong",
         )}
       >
         <span
           aria-hidden="true"
           className={cn(
             "h-px w-8",
-            isInverse ? "bg-panel-foreground/40" : "bg-primary/50",
+            isInverse
+              ? "bg-panel-foreground/40"
+              : isSecondaryEyebrow
+                ? "bg-secondary/50"
+                : "bg-primary/50",
           )}
         />
         {eyebrow}

@@ -22,11 +22,11 @@ const groupIcons = {
 } as const;
 
 const spanClasses: Record<SkillGroupId, string> = {
-  frontend: "lg:col-span-3",
-  backend: "lg:col-span-3",
+  frontend: "md:col-span-2 lg:col-span-3 xl:col-span-4",
+  backend: "lg:col-span-3 xl:col-span-2",
   databases: "lg:col-span-2",
   mobile: "lg:col-span-2",
-  tools: "md:col-span-2 lg:col-span-2",
+  tools: "lg:col-span-2",
 };
 
 export async function Skills() {
@@ -44,11 +44,12 @@ export async function Skills() {
           id="skills-title"
           anchorId="skills"
           eyebrow={t("eyebrow")}
+          eyebrowTone="secondary"
           title={t("title")}
           intro={t("intro")}
         />
 
-        <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-6">
+        <ul className="mt-12 grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-6">
           {skillGroups.map((group, index) => {
             const Icon = groupIcons[group.icon];
             const title = tGroup(`${group.id}.title`);
@@ -62,7 +63,7 @@ export async function Skills() {
                   spanClasses[group.id],
                 )}
               >
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center justify-between gap-4">
                   <span className="grid size-11 place-items-center rounded-xl bg-accent text-accent-foreground">
                     <Icon className="size-5" />
                   </span>
@@ -81,10 +82,12 @@ export async function Skills() {
                   {description}
                 </p>
 
-                <ul className="mt-auto flex flex-wrap gap-2 pt-6">
+                <ul className="mt-5 flex flex-wrap gap-2 min-[340px]:max-md:gap-1.5">
                   {group.items.map((item) => (
                     <li key={item}>
-                      <Tag>{tTech(item)}</Tag>
+                      <Tag className="min-[340px]:max-md:px-2">
+                        {tTech(item)}
+                      </Tag>
                     </li>
                   ))}
                 </ul>

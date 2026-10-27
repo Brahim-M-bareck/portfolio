@@ -34,9 +34,11 @@ export async function Hero() {
             id="hero-title"
             className="mt-6 font-display text-[2.45rem] font-medium leading-[1.02] tracking-tight text-foreground rtl:leading-[1.24] sm:text-6xl lg:text-7xl"
           >
-            <span className="block">{t("titleLine1")}</span>
-            <span className="block">{t("titleLine2")}</span>
-            <span className="block italic text-primary">{t("titleLine3")}</span>
+            {t.rich("title", {
+              hl: (chunks) => (
+                <span className="italic text-primary">{chunks}</span>
+              ),
+            })}
           </h1>
 
           <p className="mt-7 max-w-xl text-pretty text-base leading-7 text-muted sm:text-lg sm:leading-8">
